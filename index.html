@@ -1,12 +1,119 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Глейси</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a class="logo__link">
+          <img class="img__logo" src="" alt="Логотип компании">
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">О компании</a>
+            </li>
+          </ul>
+          <ul class="nav__list nav__list--actions">
+            <li class="nav__item">
+              <a class="nav__link" href="tel:+78005558628">+7 800 555-86-28</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--search bg-decor" href="#"> <!--кнопка -->
+                <span class="visually-hidden">
+                  Поиск
+                </span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--enter bg-decor" href="#">Вход</a> <!--кнопка -->
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--cart bg-decor" href="#">Пусто</a> <!--кнопка -->
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <!-- /Header -->
+    <!-- Main -->
+    <main class="main container">
+      <h1 class="visually-hidden">Магазин Глейси</h1>
+      <!-- Hero -->
+      <section class="hero"></section>
+      <!-- /Hero -->
+      <!-- Promo -->
+      <section class="promo"></section>
+      <!-- /Promo -->
+      <!-- Popular-products -->
+      <section class="popular-products"></section>
+      <!-- /Popular-products -->
+      <!-- Advantages -->
+      <section class="advantages"></section>
+      <!-- /Advantages -->
+      <!-- Container--columns -->
+      <div class="container--columns">
+        <article class="blog"></article>
+        <section class="subscription"></section>
+      </div>
+      <!-- /Container--columns -->
+      <!-- Delivery -->
+      <section class="delivery"></section>
+      <!-- /Delivery -->
+      <!-- Contacts -->
+      <section class="contacts"></section>
+      <!-- /Contacts -->
+    </main>
+    <!-- /Main -->
+    <!-- Footer -->
+    <footer class="footer">
+      <ul class="footer__social">
+        <li class="social__item">
+          <a class="social__link" target="_blank" href="#" >
+            <span class="visually-hidden">Магазин Глейси в контакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" target="_blank" href="#">
+            <span class="visually-hidden">Магазин Глейси в фэйсбук</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" target="_blank" href="#">
+            <span class="visually-hidden">Магазин Глейси в инстаграм</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="footer__addition">
+        <li class="addition__item">
+          <a class="addition__link addition__link--heart" href="#">Для поставщиков</a>
+        </li>
+        <li class="addition__item">
+          <a class="addition__link" href="#">Наши документы</a>
+        </li>
+        <li class="addition__item">
+          <a class="addition__link" href="#">О производстве</a>
+        </li>
+        <li class="addition__item">
+          <a class="addition__link" href="#">Экологические стандарты</a>
+        </li>
+      </ul>
+      <div class="footer__developed">
+        <a class="developed__link" target="_blank" href="https://htmlacademy.ru/">
+          <img src="" alt="Логотип HTML академии">
+        </a>
+        <span class="developed__copylink">Сделано в <a href="https://htmlacademy.ru/" target="_blank">.html academy</a> &#169; 2021</span>
+      </div>
+    </footer>
+    <!-- /Footer -->
   </body>
 </html>
