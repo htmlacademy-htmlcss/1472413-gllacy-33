@@ -59,14 +59,85 @@
       <h1 class="header__inner-title">Сливочное мороженое</h1>
     </header>
     <section class="flavours">
-      <form class="flavours__form" action="https://echo.htmlacademy.ru/" method="post"></form>
+      <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+      <form class="flavours__form" action="https://echo.htmlacademy.ru/" method="get" oninput="minValue.value=minValue.value; maxValue.value=maxValue.value">
+        <div class="flavours__filter">
+          <label class="flavours__filter-text" for="flavours-sorting">Сортировка:</label>
+          <select class="flavours__filter-select" name="flavours-sorting" id="flavours-sorting">
+            <option value="by-popular">по&nbsp;популярности</option>
+            <option value="by-name">по&nbsp;наименованию</option>
+            <option value="cheap">сначала недорогие</option>
+            <option value="expensive">сначала дорогие</option>
+          </select>
+        </div>
+        <fieldset class="flavours__filter">
+          <legend class="flavours__filter-text">Цена: 100 ₽ &mdash; 500 ₽</legend>
+          <!-- input range -->
+        </fieldset>
+        <fieldset class="flavours__filter">
+          <legend class="flavours__filter-text">Жирность:</legend>
+          <ul class="flavours__filter-list">
+            <li class="flavours__filter-item">
+              <label class="flavours__filter-label">
+                <input class="flavours__filter-radio" type="radio" name="flavours-precents" value="zero-fat-content"> 0%
+              </label>
+            </li>
+            <li class="flavours__filter-item">
+              <label class="flavours__filter-label">
+                <input class="flavours__filter-radio" type="radio" name="flavours-precents" value="low-fat-content" checked> до&nbsp;10%
+              </label>
+            </li>
+            <li class="flavours__filter-item">
+              <label class="flavours__filter-label">
+                <input class="flavours__filter-radio" type="radio" name="flavours-precents" value="middle-fat-content"> до&nbsp;30%
+              </label>
+            </li>
+            <li class="flavours__filter-item">
+              <label class="flavours__filter-label">
+                <input class="flavours__filter-radio" type="radio" name="flavours-precents" value="high-fat-content"> выше&nbsp;30%
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="flavours__filter">
+          <legend class="flavours__filter-text">Наполнители:</legend>
+          <ul class="flavours__filter-list">
+            <li class="flavours__filter-item">
+              <label class="flavours__filter-label">
+                <input class="flavours__filter-checkbox" type="checkbox" name="flavours-precents" value="chocolate" checked> шоколадные
+              </label>
+            </li>
+            <li class="flavours__filter-item">
+              <label class="flavours__filter-label">
+                <input class="flavours__filter-checkbox" type="checkbox" name="flavours-precents" value="sugar" checked> сахарные посыпки
+              </label>
+            </li>
+            <li class="flavours__filter-item">
+              <label class="flavours__filter-label">
+                <input class="flavours__filter-checkbox" type="checkbox" name="flavours-precents" value="fruits"> фрукты
+              </label>
+            </li>
+            <li class="flavours__filter-item">
+              <label class="flavours__filter-label">
+                <input class="flavours__filter-checkbox" type="checkbox" name="flavours-precents" value="syrups"> сиропы
+              </label>
+            </li>
+            <li class="flavours__filter-item">
+              <label class="flavours__filter-label">
+                <input class="flavours__filter-checkbox" type="checkbox" name="flavours-precents" value="jams"> джемы
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="flavours__btn btn btn-white" type="submit">Применить</button>
+      </form>
       <ul class="flavours__list">
         <li class="flavours__item">
           <a class="flavours__link" href="#">
             <img class="flavours__img" alt="Мороженое Малинка" src="">
             <h3 class="flavours__title">Малинка</h3>
           </a>
-          <p class="flavours__description">Сливочное мороженое с малиновым джемом</p>
+          <p class="flavours__description">Сливочное мороженое с&nbsp;малиновым джемом</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">310 ₽/кг</b>
             <button class="flavours__item-cart" type="button">
@@ -79,7 +150,7 @@
             <img class="flavours__img" alt="Мороженое Фисташка" src="">
             <h3 class="flavours__title">Фисташка</h3>
           </a>
-          <p class="flavours__description">Фисташковый пломбир с кусочками шоколада</p>
+          <p class="flavours__description">Фисташковый пломбир с&nbsp;кусочками шоколада</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">340 ₽/кг</b>
             <button class="flavours__item-cart" type="button">
@@ -92,7 +163,7 @@
             <img class="flavours__img" alt="Мороженое Черника" src="">
             <h3 class="flavours__title">Черника</h3>
           </a>
-          <p class="flavours__description">Крем-брюле с черничным джемом</p>
+          <p class="flavours__description">Крем-брюле с&nbsp;черничным джемом</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">330 ₽/кг</b>
             <button class="flavours__item-cart" type="button">
@@ -105,7 +176,7 @@
             <img class="flavours__img" alt="Мороженое Бабл-гам" src="">
             <h3 class="flavours__title">Бабл-гам</h3>
           </a>
-          <p class="flavours__description">Ванильный пломбир со сладкой посыпкой</p>
+          <p class="flavours__description">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">320 ₽/кг</b>
             <button class="flavours__item-cart" type="button">
@@ -118,7 +189,7 @@
             <img class="flavours__img" alt="Мороженое Ежевика" src="">
             <h3 class="flavours__title">Ежевика</h3>
           </a>
-          <p class="flavours__description">Сливочное мороженое с ежевичным джемом</p>
+          <p class="flavours__description">Сливочное мороженое с&nbsp;ежевичным джемом</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">330 ₽/кг</b>
             <button class="flavours__item-cart" type="button">
@@ -131,7 +202,7 @@
             <img class="flavours__img" alt="Мороженое Банан" src="">
             <h3 class="flavours__title">Банан</h3>
           </a>
-          <p class="flavours__description">Сливочный пломбир с банановым вкусом</p>
+          <p class="flavours__description">Сливочный пломбир с&nbsp;банановым вкусом</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">340 ₽/кг</b>
             <button class="flavours__item-cart" type="button">
@@ -157,7 +228,7 @@
             <img class="flavours__img" alt="Мороженое Клубничка" src="">
             <h3 class="flavours__title">Клубничка</h3>
           </a>
-          <p class="flavours__description">Сливочный пломбир с клубничным вкусом</p>
+          <p class="flavours__description">Сливочный пломбир с&nbsp;клубничным вкусом</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">300 ₽/кг</b>
             <button class="flavours__item-cart" type="button">
@@ -183,7 +254,7 @@
             <img class="flavours__img" alt="Мороженое Ментол" src="">
             <h3 class="flavours__title">Ментол</h3>
           </a>
-          <p class="flavours__description">Сливочный пломбир с ментоловым сиропом</p>
+          <p class="flavours__description">Сливочный пломбир с&nbsp;ментоловым сиропом</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">320 ₽/кг</b>
             <button class="flavours__item-cart" type="button">
@@ -196,7 +267,7 @@
             <img class="flavours__img" alt="Мороженое Орешек" src="">
             <h3 class="flavours__title">Орешек</h3>
           </a>
-          <p class="flavours__description">Фисташковый пломбир с шоколадным сиропом</p>
+          <p class="flavours__description">Фисташковый пломбир с&nbsp;шоколадным сиропом</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">360 ₽/кг</b>
             <button class="flavours__item-cart" type="button">
@@ -218,9 +289,37 @@
           </div>
         </li>
       </ul>
-      <button class="footer__inner-btn btn-btn-white">Показать ещё</button>
-
     </section>
+    <footer class="footer__inner">
+      <button class="footer__inner-btn btn-btn-white">Показать ещё</button>
+      <ul class="footer__inner-pagination">
+        <li class="footer__inner-pagination-item">
+          <a class="footer__inner-pagination-link footer__inner-pagination-prev disabled">
+            <span class="visually-hidden">Предыдущая страница</span>
+          </a>
+        </li>
+        <li class="footer__inner-pagination-item">
+          <a class="footer__inner-pagination-link footer__inner-pagination-current">1</a>
+        </li>
+        <li class="footer__inner-pagination-item">
+          <a class="footer__inner-pagination-link" href="#">2</a>
+        </li>
+        <li class="footer__inner-pagination-item">
+          <a class="footer__inner-pagination-link" href="#">3</a>
+        </li>
+        <li class="footer__inner-pagination-item">
+          <a class="footer__inner-pagination-link" href="#">4</a>
+        </li>
+        <li class="footer__inner-pagination-item">
+          <a class="footer__inner-pagination-link" href="#">5</a>
+        </li>
+        <li class="footer__inner-pagination-item">
+          <a class="footer__inner-pagination-link footer__inner-pagination-next" href="#">
+            <span class="visually-hidden">Следующая страница</span>
+          </a>
+        </li>
+      </ul>
+    </footer>
   </main>
   <!-- Footer -->
   <footer class="footer">
