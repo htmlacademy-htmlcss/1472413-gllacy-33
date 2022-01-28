@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>Каталог мороженого Глейси</title>
 </head>
 <body>
   <!-- Header -->
   <header class="header">
-    <a class="logo__link" href="index.html">
-      <img class="img__logo" src="" alt="Логотип компании">
+    <a class="header__logo-link" href="index.html">
+      <img class="header__logo-img" src="images/logo.svg" width="137" height="56" alt="Логотип компании">
     </a>
     <nav class="nav">
       <ul class="nav__list">
@@ -43,24 +44,28 @@
     </nav>
   </header>
   <!-- /Header -->
-  <main class="main__inner container">
-    <header class="header__inner">
-      <ul class="header__inner-list">
-        <li class="header__inner-item">
-          <a class="header__inner-link" href="index.html">Главная</a>
+  <!-- Main -->
+  <main class="main-inner container">
+    <!-- Header-inner -->
+    <header class="main-inner__header">
+      <ul class="main-inner__header-list">
+        <li class="main-inner__header-item">
+          <a class="main-inner__header-link" href="index.html">Главная</a>
         </li>
-        <li class="header__inner-item">
-          <a class="header__inner-link" href="#">Каталог</a>
+        <li class="main-inner__header-item">
+          <a class="main-inner__header-link" href="#">Каталог</a>
         </li>
-        <li class="header__inner-item">
-          <a class="header__inner-link">Сливочное</a>
+        <li class="main-inner__header-item">
+          <a class="main-inner__header-link">Сливочное</a>
         </li>
       </ul>
-      <h1 class="header__inner-title">Сливочное мороженое</h1>
+      <h1 class="main-inner__header-title">Сливочное мороженое</h1>
     </header>
+    <!-- /Header-inner -->
     <section class="flavours">
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-      <form class="flavours__form" action="https://echo.htmlacademy.ru/" method="get" oninput="minValue.value=minValue.value; maxValue.value=maxValue.value">
+      <!-- /Flavours__form -->
+      <form class="flavours__form" action="https://echo.htmlacademy.ru/" method="get">
         <div class="flavours__filter">
           <label class="flavours__filter-text" for="flavours-sorting">Сортировка:</label>
           <select class="flavours__filter-select" name="flavours-sorting" id="flavours-sorting">
@@ -131,234 +136,240 @@
         </fieldset>
         <button class="flavours__btn btn btn-white" type="submit">Применить</button>
       </form>
+      <!-- /Flavours__form -->
+      <!-- Flavours__list -->
       <ul class="flavours__list">
         <li class="flavours__item">
           <a class="flavours__link" href="#">
-            <img class="flavours__img" alt="Мороженое Малинка" src="">
+            <img class="flavours__img" alt="Мороженое Малинка" src="images/flavours/raspberries.jpg" width="168" height="168">
             <h3 class="flavours__title">Малинка</h3>
           </a>
           <p class="flavours__description">Сливочное мороженое с&nbsp;малиновым джемом</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">310 ₽/кг</b>
-            <button class="flavours__item-cart" type="button">
+            <a class="flavours__item-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            </a>
           </div>
         </li>
         <li class="flavours__item">
           <a class="flavours__link" href="#">
-            <img class="flavours__img" alt="Мороженое Фисташка" src="">
+            <img class="flavours__img" alt="Мороженое Фисташка" src="images/flavours/pistachio.jpg" width="168" height="168">
             <h3 class="flavours__title">Фисташка</h3>
           </a>
           <p class="flavours__description">Фисташковый пломбир с&nbsp;кусочками шоколада</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">340 ₽/кг</b>
-            <button class="flavours__item-cart" type="button">
+            <a class="flavours__item-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            </a>
           </div>
         </li>
         <li class="flavours__item">
           <a class="flavours__link" href="#">
-            <img class="flavours__img" alt="Мороженое Черника" src="">
+            <img class="flavours__img" alt="Мороженое Черника" src="images/flavours/blueberry.jpg" width="168" height="168">
             <h3 class="flavours__title">Черника</h3>
           </a>
           <p class="flavours__description">Крем-брюле с&nbsp;черничным джемом</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">330 ₽/кг</b>
-            <button class="flavours__item-cart" type="button">
+            <a class="flavours__item-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            </a>
           </div>
         </li>
         <li class="flavours__item">
           <a class="flavours__link" href="#">
-            <img class="flavours__img" alt="Мороженое Бабл-гам" src="">
+            <img class="flavours__img" alt="Мороженое Бабл-гам" src="images/flavours/bubble-gum.jpg" width="168" height="168">
             <h3 class="flavours__title">Бабл-гам</h3>
           </a>
           <p class="flavours__description">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">320 ₽/кг</b>
-            <button class="flavours__item-cart" type="button">
+            <a class="flavours__item-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            </a>
           </div>
         </li>
         <li class="flavours__item">
           <a class="flavours__link" href="#">
-            <img class="flavours__img" alt="Мороженое Ежевика" src="">
+            <img class="flavours__img" alt="Мороженое Ежевика" src="images/flavours/blackberry.jpg" width="168" height="168">
             <h3 class="flavours__title">Ежевика</h3>
           </a>
           <p class="flavours__description">Сливочное мороженое с&nbsp;ежевичным джемом</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">330 ₽/кг</b>
-            <button class="flavours__item-cart" type="button">
+            <a class="flavours__item-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            </a>
           </div>
         </li>
         <li class="flavours__item">
           <a class="flavours__link" href="#">
-            <img class="flavours__img" alt="Мороженое Банан" src="">
+            <img class="flavours__img" alt="Мороженое Банан" src="images/flavours/banana.jpg" width="168" height="168">
             <h3 class="flavours__title">Банан</h3>
           </a>
           <p class="flavours__description">Сливочный пломбир с&nbsp;банановым вкусом</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">340 ₽/кг</b>
-            <button class="flavours__item-cart" type="button">
+            <a class="flavours__item-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            </a>
           </div>
         </li>
         <li class="flavours__item">
           <a class="flavours__link" href="#">
-            <img class="flavours__img" alt="Мороженое Шоколадка" src="">
+            <img class="flavours__img" alt="Мороженое Шоколадка" src="images/flavours/chocolate.jpg" width="168" height="168">
             <h3 class="flavours__title">Шоколадка</h3>
           </a>
           <p class="flavours__description">Классический шоколадный пломбир</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">270 ₽/кг</b>
-            <button class="flavours__item-cart" type="button">
+            <a class="flavours__item-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            </a>
           </div>
         </li>
         <li class="flavours__item">
           <a class="flavours__link" href="#">
-            <img class="flavours__img" alt="Мороженое Клубничка" src="">
+            <img class="flavours__img" alt="Мороженое Клубничка" src="images/flavours/strawberry.jpg" width="168" height="168">
             <h3 class="flavours__title">Клубничка</h3>
           </a>
           <p class="flavours__description">Сливочный пломбир с&nbsp;клубничным вкусом</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">300 ₽/кг</b>
-            <button class="flavours__item-cart" type="button">
+            <a class="flavours__item-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            </a>
           </div>
         </li>
         <li class="flavours__item">
           <a class="flavours__link" href="#">
-            <img class="flavours__img" alt="Мороженое Лимон" src="">
+            <img class="flavours__img" alt="Мороженое Лимон" src="images/flavours/lemon.jpg" width="168" height="168">
             <h3 class="flavours__title">Лимон</h3>
           </a>
           <p class="flavours__description">Освежающий лимонный сорбет</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">310 ₽/кг</b>
-            <button class="flavours__item-cart" type="button">
+            <a class="flavours__item-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            </a>
           </div>
         </li>
         <li class="flavours__item">
           <a class="flavours__link" href="#">
-            <img class="flavours__img" alt="Мороженое Ментол" src="">
+            <img class="flavours__img" alt="Мороженое Ментол" src="images/flavours/mentol.jpg" width="168" height="168">
             <h3 class="flavours__title">Ментол</h3>
           </a>
           <p class="flavours__description">Сливочный пломбир с&nbsp;ментоловым сиропом</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">320 ₽/кг</b>
-            <button class="flavours__item-cart" type="button">
+            <a class="flavours__item-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            </a>
           </div>
         </li>
         <li class="flavours__item">
           <a class="flavours__link" href="#">
-            <img class="flavours__img" alt="Мороженое Орешек" src="">
+            <img class="flavours__img" alt="Мороженое Орешек" src="images/flavours/nut.jpg" width="168" height="168">
             <h3 class="flavours__title">Орешек</h3>
           </a>
           <p class="flavours__description">Фисташковый пломбир с&nbsp;шоколадным сиропом</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">360 ₽/кг</b>
-            <button class="flavours__item-cart" type="button">
+            <a class="flavours__item-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            </a>
           </div>
         </li>
         <li class="flavours__item">
           <a class="flavours__link" href="#">
-            <img class="flavours__img" alt="Мороженое Крем-брюле" src="">
+            <img class="flavours__img" alt="Мороженое Крем-брюле" src="images/flavours/creme-brulee.jpg" width="168" height="168">
             <h3 class="flavours__title">Крем-брюле</h3>
           </a>
           <p class="flavours__description">Классическое крем-брюле</p>
           <div class="flavours__item-footer">
             <b class="flavours__item-price">280 ₽/кг</b>
-            <button class="flavours__item-cart" type="button">
+            <a class="flavours__item-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            </a>
           </div>
         </li>
       </ul>
+      <!-- /Flavours__list -->
     </section>
-    <footer class="footer__inner">
-      <button class="footer__inner-btn btn-btn-white">Показать ещё</button>
-      <ul class="footer__inner-pagination">
-        <li class="footer__inner-pagination-item">
-          <a class="footer__inner-pagination-link footer__inner-pagination-prev disabled">
+    <!-- Footer-inner-->
+    <footer class="footer-inner">
+      <button class="footer-inner-btn btn-btn-white">Показать ещё</button>
+      <ul class="footer-inner__pagination">
+        <li class="footer-inner__pagination-item">
+          <a class="footer-inner__pagination-link footer-inner__pagination-prev disabled">
             <span class="visually-hidden">Предыдущая страница</span>
           </a>
         </li>
-        <li class="footer__inner-pagination-item">
-          <a class="footer__inner-pagination-link footer__inner-pagination-current">1</a>
+        <li class="footer-inner__pagination-item">
+          <a class="footer-inner__pagination-link footer-inner__pagination-current">1</a>
         </li>
-        <li class="footer__inner-pagination-item">
-          <a class="footer__inner-pagination-link" href="#">2</a>
+        <li class="footer-inner__pagination-item">
+          <a class="footer-inner__pagination-link" href="#">2</a>
         </li>
-        <li class="footer__inner-pagination-item">
-          <a class="footer__inner-pagination-link" href="#">3</a>
+        <li class="footer-inner__pagination-item">
+          <a class="footer-inner__pagination-link" href="#">3</a>
         </li>
-        <li class="footer__inner-pagination-item">
-          <a class="footer__inner-pagination-link" href="#">4</a>
+        <li class="footer-inner__pagination-item">
+          <a class="footer-inner__pagination-link" href="#">4</a>
         </li>
-        <li class="footer__inner-pagination-item">
-          <a class="footer__inner-pagination-link" href="#">5</a>
+        <li class="footer-inner__pagination-item">
+          <a class="footer-inner__pagination-link" href="#">5</a>
         </li>
-        <li class="footer__inner-pagination-item">
-          <a class="footer__inner-pagination-link footer__inner-pagination-next" href="#">
+        <li class="footer-inner__pagination-item">
+          <a class="footer-inner__pagination-link footer-inner__pagination-next" href="#">
             <span class="visually-hidden">Следующая страница</span>
           </a>
         </li>
       </ul>
     </footer>
+    <!-- /Footer-inner -->
   </main>
+  <!-- /Main -->
   <!-- Footer -->
   <footer class="footer">
     <ul class="footer__social">
-      <li class="social__item">
-        <a class="social__link" target="_blank" href="https://vk.com/htmlacademy" >
+      <li class="footer__social-item">
+        <a class="footer__social-link" target="_blank" href="https://vk.com/htmlacademy" >
           <span class="visually-hidden">Магазин Глейси в контакте</span>
         </a>
       </li>
-      <li class="social__item">
-        <a class="social__link" target="_blank" href="https://facebook.com/htmlacademy">
+      <li class="footer__social-item">
+        <a class="footer__social-link" target="_blank" href="https://facebook.com/htmlacademy">
           <span class="visually-hidden">Магазин Глейси в фэйсбук</span>
         </a>
       </li>
-      <li class="social__item">
-        <a class="social__link" target="_blank" href="https://instagram.com/htmlacademy">
+      <li class="footer__social-item">
+        <a class="footer__social-link" target="_blank" href="https://instagram.com/htmlacademy">
           <span class="visually-hidden">Магазин Глейси в инстаграм</span>
         </a>
       </li>
     </ul>
     <ul class="footer__addition">
-      <li class="addition__item">
-        <a class="addition__link addition__link--heart" href="#">Для поставщиков</a>
+      <li class="footer__addition-item">
+        <a class="footer__addition-link footer__addition-link--heart" href="#">Для поставщиков</a>
       </li>
-      <li class="addition__item">
-        <a class="addition__link" href="#">Наши документы</a>
+      <li class="footer__addition-item">
+        <a class="footer__addition-link" href="#">Наши документы</a>
       </li>
-      <li class="addition__item">
-        <a class="addition__link" href="#">О&nbsp;производстве</a>
+      <li class="footer__addition-item">
+        <a class="footer__addition-link" href="#">О&nbsp;производстве</a>
       </li>
-      <li class="addition__item">
-        <a class="addition__link" href="#">Экологические стандарты</a>
+      <li class="footer__addition-item">
+        <a class="footer__addition-link" href="#">Экологические стандарты</a>
       </li>
     </ul>
     <div class="footer__developed">
-      <a class="developed__link" target="_blank" href="https://htmlacademy.ru/">
-        <img class="developed__logo" src="" alt="Логотип HTML академии">
+      <a class="footer__developed-link" target="_blank" href="https://htmlacademy.ru/">
+        <img class="footer__developed-logo" src="images/logo-htmlacademy.svg" width="93" height="28" alt="Логотип HTML академии">
       </a>
-      <span class="developed__copylink">Сделано в <a href="https://htmlacademy.ru/" target="_blank">.html academy</a> &#169; 2021</span>
+      <span class="footer__developed-copylink">Сделано в <a href="https://htmlacademy.ru/" target="_blank">.html academy</a> &#169; 2021</span>
     </div>
   </footer>
   <!-- /Footer -->
