@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="styles/styles.css">
   <title>Магазин мороженого Глейси</title>
 </head>
-<body>
+<body class="body-pink"> <!-- добавление класса для цвета фона всей страницы при перекючении слайдера -->
     <!-- Header -->
-    <header class="header">
+    <header class="header container">
         <a class="header__logo-link">
           <img class="header__logo-img" src="images/logo.svg" width="137" height="56" alt="Логотип компании">
         </a>
@@ -28,17 +28,17 @@
           <a class="nav__phone" href="tel:+78005558628">+7 800 555-86-28</a>
           <ul class="nav__list nav__list--actions">
             <li class="nav__item">
-              <a class="nav__btn nav__btn--search btn-transparent" href="#">
+              <a class="nav__btn nav__btn--search btn btn--transparent" href="#">
                 <span class="visually-hidden">
                   Поиск
                 </span>
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__btn nav__btn--enter btn-transparent" href="#">Вход</a>
+              <a class="nav__btn btn nav__btn--enter btn--transparent" href="#">Вход</a>
             </li>
             <li class="nav__item">
-              <a class="nav__btn nav__btn--cart btn-transparent" href="#">Пусто</a>
+              <a class="nav__btn btn nav__btn--cart btn--transparent" href="#">Пусто</a>
             </li>
           </ul>
         </nav>
@@ -53,32 +53,38 @@
           <li class="hero__slider-item">
             <h2 class="hero__slider-title">Нежный пломбир с&nbsp;клубничным джемом</h2>
             <p class="hero__slider-description">Натуральное мороженое из&nbsp;свежих сливок и&nbsp;молока с&nbsp;вкуснейшим клубничным джемом&nbsp;&mdash; это идеальный десерт для всей семьи.</p>
-            <button class="hero__slider-btn btn btn-white" type="button">Заказать</button>
-            <img class="hero__slider-img" src="images/delicate-sundae.png" width="306" height="507" alt="мороженое с клубничным джемом">
+            <button class="hero__slider-btn btn btn--white" type="button">Заказать</button>
+            <div class="hero__slider-wrapper">
+              <img class="hero__slider-img" src="images/delicate-sundae.png" width="306" height="507" alt="мороженое с клубничным джемом">
+            </div>
           </li>
           <li class="hero__slider-item">
             <h2 class="hero__slider-title">Сливочное мороженое со&nbsp;вкусом банана</h2>
             <p class="hero__slider-description">Сливочное мороженое с&nbsp;ярким банановым вкусом подарит вам свежесть и&nbsp;наслаждение даже в&nbsp;самый жаркий летний день.</p>
-            <button class="hero__slider-btn btn btn-white" type="button">Заказать</button>
-            <img class="hero__slider-img" src="images/ice-cream-sundae.png" width="306" height="507" alt="мороженое со вкусом банана">
+            <button class="hero__slider-btn btn btn--white" type="button">Заказать</button>
+            <div class="hero__slider-wrapper">
+              <img class="hero__slider-img" src="images/ice-cream-sundae.png" width="306" height="507" alt="мороженое со вкусом банана">
+            </div>
           </li>
           <li class="hero__slider-item">
             <h2 class="hero__slider-title">Карамельный пломбир с&nbsp;маршмеллоу</h2>
             <p class="hero__slider-description">Необычный сладкий десерт с&nbsp;карамельным топпингом и&nbsp;кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-            <button class="hero__slider-btn btn btn-white" type="button">Заказать</button>
-            <img class="hero__slider-img" src="images/caramel-sundae.png" width="306" height="507" alt="мороженое карамельный пломбир с маршмеллоу">
+            <button class="hero__slider-btn btn btn--white" type="button">Заказать</button>
+            <div class="hero__slider-wrapper">
+              <img class="hero__slider-img" src="images/caramel-sundae.png" width="306" height="507" alt="мороженое карамельный пломбир с маршмеллоу">
+            </div>
           </li>
         </ul>
-        <button class="hero__slider-prev btn" type="button">
+        <button class="hero__slider-prev btn btn--transparent" type="button">
           <span class="visually-hidden">предыдущий слайд</span>
         </button>
-        <button class="hero__slider-next btn btn-white" type="button">
+        <button class="hero__slider-next btn btn--transparent" type="button">
           <span class="visually-hidden">следующий слайд</span>
         </button>
         <footer class="hero__footer">
           <ol class="pagination">
             <li class="pagination__item">
-              <a class="pagination__link" href="#">
+              <a class="pagination__link pagination__link--active" href="#">
                 <span class="visually-hidden">выбран первый вкус мороженого</span>
               </a>
             </li>
@@ -93,19 +99,19 @@
               </a>
             </li>
           </ol>
-          <ul class="hero__footer-social">
-            <li class="hero__footer-social-item">
-              <a class="hero__footer-social-link" target="_blank" href="https://vk.com/htmlacademy" >
+          <ul class="hero__footer-social footer-social">
+            <li class="footer-social-item">
+              <a class="footer-social-link footer-social-link--vk btn btn--white" target="_blank" href="https://vk.com/htmlacademy" >
                 <span class="visually-hidden">Магазин Глейси в контакте</span>
               </a>
             </li>
-            <li class="hero__footer-social-item">
-              <a class="hero__footer-social-" target="_blank" href="https://facebook.com/htmlacademy">
+            <li class="footer-social-item">
+              <a class="footer-social-link footer-social-link--fb btn btn--white" target="_blank" href="https://facebook.com/htmlacademy">
                 <span class="visually-hidden">Магазин Глейси в фэйсбук</span>
               </a>
             </li>
-            <li class="hero__footer-social-item">
-              <a class="hero__footer-social-" target="_blank" href="https://instagram.com/htmlacademy">
+            <li class="footer-social-item">
+              <a class="footer-social-link footer-social-link--insta btn btn--white" target="_blank" href="https://instagram.com/htmlacademy">
                 <span class="visually-hidden">Магазин Глейси в инстаграм</span>
               </a>
             </li>
@@ -120,62 +126,70 @@
           <li class="promo__item">
             <h3 class="promo__item-title">Малинка даром!</h3>
             <p class="promo__item-description">При покупке 2&nbsp;кг любого фруктового мороженого добавим в&nbsp;ваш заказ банку малинового варенья бесплатно.</p>
-            <button class="promo__item-btn btn btn-white" type="button">Хочу подарок!</button>
+            <button class="promo__item-btn btn btn--white" type="button">Хочу подарок!</button>
           </li>
           <li class="promo__item">
             <h3 class="promo__item-title">Маршмеллоу даром!</h3>
             <p class="promo__item-description">При покупке 2&nbsp;кг пломбира добавим в&nbsp;ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-            <button class="promo__item-btn btn btn-white" type="button">Хочу подарок!</button>
+            <button class="promo__item-btn btn btn--white" type="button">Хочу подарок!</button>
           </li>
         </ul>
       </section>
       <!-- /Promo -->
       <!-- Popular -->
-      <section class="popular">
-        <h2 class="popular__title title">Попробуйте самые популярные вкусы нашего мороженого</h2>
-        <ul class="popular__list">
-          <li class="popular__item">
-            <img class="popular__item-img" src="images/flavours/raspberries.jpg" width="168" height="168" alt="Морожение Малинка">
-            <h3 class="popular__item-title">Малинка</h3>
-            <p class="popular__item-description">Сливочное мороженое с&nbsp;малиновым джемом</p>
-            <div class="popular__item-footer">
-              <b class="popular__item-price">310 ₽/кг</b>
-              <button class="popular__item-btn btn btn-pink">
+      <section class="flavours">
+        <h2 class="flavours__title title">Попробуйте самые популярные вкусы нашего мороженого</h2>
+        <ul class="flavours__list">
+          <li class="flavours__item">
+            <a class="flavours__item-link" href="#">
+              <img class="flavours__item-img" src="images/flavours/raspberries.jpg" width="168" height="168" alt="Морожение Малинка">
+              <h3 class="flavours__item-title">Малинка</h3>
+            </a>
+            <p class="flavours__item-description">Сливочное мороженое с&nbsp;малиновым джемом</p>
+            <div class="flavours__item-footer">
+              <b class="flavours__item-price">310 ₽/кг</b>
+              <a class="flavours__item-btn btn btn--pink" href="#">
                 <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              </a>
             </div>
           </li>
-          <li class="popular__item">
-            <img class="popular__item-img" src="images/flavours/pistachio.jpg" width="168" height="168" alt="Морожение Фисташка">
-            <h3 class="popular__item-title">Фисташка</h3>
-            <p class="popular__item-description">Фисташковый пломбир с&nbsp;кусочками шоколада</p>
-            <div class="popular__item-footer">
-              <b class="popular__item-price">340 ₽/кг</b>
-              <button class="popular__item-btn btn btn-pink">
+          <li class="flavours__item">
+            <a class="flavours__item-link" href="#">
+              <img class="flavours__item-img" src="images/flavours/pistachio.jpg" width="168" height="168" alt="Морожение Фисташка">
+              <h3 class="flavours__item-title">Фисташка</h3>
+            </a>
+            <p class="flavours__item-description">Фисташковый пломбир с&nbsp;кусочками шоколада</p>
+            <div class="flavours__item-footer">
+              <b class="flavours__item-price">340 ₽/кг</b>
+              <a class="flavours__item-btn btn btn--pink" href="#">
                 <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              </a>
             </div>
           </li>
-          <li class="popular__item">
-            <img class="popular__item-img" src="images/flavours/blueberry.jpg" width="168" height="168" alt="Морожение Черника">
-            <h3 class="popular__item-title">Черника</h3>
-            <p class="popular__item-description">Крем-брюле с&nbsp;черничным джемом</p>
-            <div class="popular__item-footer">
-              <b class="popular__item-price">330 ₽/кг</b>
-              <button class="popular__item-btn btn btn-pink">
+          <li class="flavours__item">
+            <a class="flavours__item-link" href="#">
+              <img class="flavours__item-img" src="images/flavours/blueberry.jpg" width="168" height="168" alt="Морожение Черника">
+              <h3 class="flavours__item-title">Черника</h3>
+            </a>
+            <p class="flavours__item-description">Крем-брюле с&nbsp;черничным джемом</p>
+            <div class="flavours__item-footer">
+              <b class="flavours__item-price">330 ₽/кг</b>
+              <a class="flavours__item-btn btn btn--pink" href="#">
                 <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              </a>
             </div>
           </li>
-          <li class="popular__item">
-            <img class="popular__item-img" src="images/flavours/bubble-gum.jpg" width="168" height="168" alt="Морожение Бабл-гам">
-            <h3 class="popular__item-title">Бабл-гам</h3>
-            <p class="popular__item-description">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
-            <div class="popular__item-footer">
-              <b class="popular__item-price">320 ₽/кг</b>
-              <button class="popular__item-btn btn btn-pink">
+          <li class="flavours__item">
+            <a class="flavours__item-link" href="#">
+              <img class="flavours__item-img" src="images/flavours/bubble-gum.jpg" width="168" height="168" alt="Морожение Бабл-гам">
+              <h3 class="flavours__item-title">Бабл-гам</h3>
+            </a>
+            <p class="flavours__item-description">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
+            <div class="flavours__item-footer">
+              <b class="flavours__item-price">320 ₽/кг</b>
+              <a class="flavours__item-btn btn btn--pink" href="#">
                 <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              </a>
             </div>
           </li>
         </ul>
@@ -194,8 +208,8 @@
         </div>
       </section>
       <!-- /About -->
-      <!-- Container-columns -->
-      <div class="container container--columns">
+      <!-- Wrapper-columns -->
+      <div class="wrapper-columns">
         <article class="blog">
           <h2 class="visually-hidden">Новости</h2>
           <p class="blog__text">Новое в&nbsp;нашем блоге</p>
@@ -209,12 +223,12 @@
               <label aria-label="Введите адрес электронной почты">
                 <input type="email" class="subscription__input" name="subscription-email" placeholder="email@example.com" required>
               </label>
-              <button class="subscription__btn btn btn-pink" type="submit">Отправить</button>
+              <button class="subscription__btn btn btn--pink" type="submit">Отправить</button>
             </form>
           </div>
         </section>
       </div>
-      <!-- /Container-columns -->
+      <!-- /Wrapper-columns -->
       <!-- Delivery -->
       <section class="delivery">
         <h2 class="delivery__title title">Доставка любимого мороженого на&nbsp;дом</h2>
@@ -238,7 +252,7 @@
               </span>
             </label>
             <input class="delivery__form-input" type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
-            <button class="delivery__form-btn btn btn-pink" type="button">Отправить</button>
+            <button class="delivery__form-btn btn btn--pink" type="button">Отправить</button>
           </fieldset>
         </form>
       </section>
@@ -247,34 +261,34 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__inner">
-          <address class="contacts__inner">
-            <span class="contacts__inner-text">Адрес главного офиса и&nbsp;офлайн-магазина:</span>
-            <span class="contacts__inner-address">наб. реки Карповки, 5 лит П, Санкт-Петербург</span>
-            <span class="contacts__inner-text">Для заказов по&nbsp;телефону:</span>
+          <address class="contacts__inner-info">
+            <p class="contacts__inner-text">Адрес главного офиса и&nbsp;офлайн-магазина:</p>
+            <p class="contacts__inner-address">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+            <p class="contacts__inner-text">Для заказов по&nbsp;телефону:</p>
             <a class="contacts__inner-address" href="tel:88128121212">+7 (812) 812-12-12</a>
-            <span class="contacts__inner-subtext">(с&nbsp;10&nbsp;до&nbsp;20&nbsp;ежедневно)</span>
+            <p class="contacts__inner-subtext">(с&nbsp;10&nbsp;до&nbsp;20&nbsp;ежедневно)</p>
           </address>
-          <button class="contacts__btn btn btn-pink" type="button">Форма обратной связи</button>
+          <button class="contacts__inner-btn btn btn--pink" type="button">Форма обратной связи</button>
         </div>
       </section>
       <!-- /Contacts -->
     </main>
     <!-- /Main -->
     <!-- Footer -->
-    <footer class="footer">
-      <ul class="footer__social">
-        <li class="footer__social-item">
-          <a class="footer__social-link" target="_blank" href="https://vk.com/htmlacademy" >
+    <footer class="footer container">
+      <ul class="footer__social footer-social">
+        <li class="footer-social-item">
+          <a class="footer-social-link footer-social-link--vk btn btn--white" target="_blank" href="https://vk.com/htmlacademy" >
             <span class="visually-hidden">Магазин Глейси в контакте</span>
           </a>
         </li>
-        <li class="footer__social-item">
-          <a class="footer__social-link" target="_blank" href="https://facebook.com/htmlacademy">
+        <li class="footer-social-item">
+          <a class="footer-social-link footer-social-link--fb btn btn--white" target="_blank" href="https://facebook.com/htmlacademy">
             <span class="visually-hidden">Магазин Глейси в фэйсбук</span>
           </a>
         </li>
-        <li class="footer__social-item">
-          <a class="footer__social-link" target="_blank" href="https://instagram.com/htmlacademy">
+        <li class="footer-social-item">
+          <a class="footer-social-link footer-social-link--insta btn btn--white" target="_blank" href="https://instagram.com/htmlacademy">
             <span class="visually-hidden">Магазин Глейси в инстаграм</span>
           </a>
         </li>
