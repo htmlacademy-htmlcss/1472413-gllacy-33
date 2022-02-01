@@ -187,21 +187,21 @@ h1, h2, h3, p {
 }
 
 /* Header */
-.nav__link, .nav__phone {
+.nav__link {
   padding: 8px 16px;
   border-radius: 26px;
 }
 
-.nav__link:hover, .nav__phone:hover {
+.nav__link:hover {
   background-color: rgba(252, 252, 252, .5);
 }
 
-.nav__link:focus, .nav__phone:focus {
+.nav__link:focus {
   background-color: rgba(252, 252, 252, .5);
   outline: 2px solid #2D3440;
 }
 
-.nav__link:active, .nav__phone:active {
+.nav__link:active {
   background-color: rgba(252, 252, 252, 1);
 }
 
@@ -455,6 +455,7 @@ h1, h2, h3, p {
 .about {
   padding: 24px;
   background-image: url("../images/wafer.jpg");
+  background-repeat: repeat;
   border-radius: 16px;
 }
 
@@ -505,8 +506,8 @@ h1, h2, h3, p {
 .subscription {
   max-width: 570px;
   padding: 6px;
-  background: url("../images/subscription.jpg") no-repeat center;
-  background-size: cover;
+  background-image: repeating-linear-gradient(135deg, #FF2F64 5px, #FF2F64 16px, #EDF1F5 16px, #EDF1F5 34px,#69A9FF 34px, #69A9FF 45px, #EDF1F5 45px, #EDF1F5 63px);
+  background-repeat: repeat;
   border-radius: 16px;
 }
 
