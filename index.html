@@ -49,27 +49,34 @@
       <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
       <!-- Hero -->
       <section class="hero">
+        <!-- Переделать блок, сделать два дива в одном текст в списке, в другом картинки в списке, родитель у кнопок должен быть див hero__slider-wrapper. Добавить превью других слайдов (псевдоэлементом???) или с классом small картинки (??)-->
         <ul class="hero__slider">
           <li class="hero__slider-item">
-            <h2 class="hero__slider-title">Нежный пломбир с&nbsp;клубничным джемом</h2>
-            <p class="hero__slider-description">Натуральное мороженое из&nbsp;свежих сливок и&nbsp;молока с&nbsp;вкуснейшим клубничным джемом&nbsp;&mdash; это идеальный десерт для всей семьи.</p>
-            <button class="hero__slider-btn btn btn--white" type="button">Заказать</button>
+            <div class="hero__slider-inner">
+              <h2 class="hero__slider-title">Нежный пломбир с&nbsp;клубничным джемом</h2>
+              <p class="hero__slider-description">Натуральное мороженое из&nbsp;свежих сливок и&nbsp;молока с&nbsp;вкуснейшим клубничным джемом&nbsp;&mdash; это идеальный десерт для всей семьи.</p>
+              <button class="hero__slider-btn btn btn--white" type="button">Заказать</button>
+            </div>
             <div class="hero__slider-wrapper">
               <img class="hero__slider-img" src="images/delicate-sundae.png" width="306" height="507" alt="мороженое с клубничным джемом">
             </div>
           </li>
           <li class="hero__slider-item">
-            <h2 class="hero__slider-title">Сливочное мороженое со&nbsp;вкусом банана</h2>
-            <p class="hero__slider-description">Сливочное мороженое с&nbsp;ярким банановым вкусом подарит вам свежесть и&nbsp;наслаждение даже в&nbsp;самый жаркий летний день.</p>
-            <button class="hero__slider-btn btn btn--white" type="button">Заказать</button>
+            <div class="hero__slider-inner">
+              <h2 class="hero__slider-title">Сливочное мороженое со&nbsp;вкусом банана</h2>
+              <p class="hero__slider-description">Сливочное мороженое с&nbsp;ярким банановым вкусом подарит вам свежесть и&nbsp;наслаждение даже в&nbsp;самый жаркий летний день.</p>
+              <button class="hero__slider-btn btn btn--white" type="button">Заказать</button>
+            </div>
             <div class="hero__slider-wrapper">
               <img class="hero__slider-img" src="images/ice-cream-sundae.png" width="306" height="507" alt="мороженое со вкусом банана">
             </div>
           </li>
           <li class="hero__slider-item">
-            <h2 class="hero__slider-title">Карамельный пломбир с&nbsp;маршмеллоу</h2>
-            <p class="hero__slider-description">Необычный сладкий десерт с&nbsp;карамельным топпингом и&nbsp;кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-            <button class="hero__slider-btn btn btn--white" type="button">Заказать</button>
+            <div class="hero__slider-inner">
+              <h2 class="hero__slider-title">Карамельный пломбир с&nbsp;маршмеллоу</h2>
+              <p class="hero__slider-description">Необычный сладкий десерт с&nbsp;карамельным топпингом и&nbsp;кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
+              <button class="hero__slider-btn btn btn--white" type="button">Заказать</button>
+            </div>
             <div class="hero__slider-wrapper">
               <img class="hero__slider-img" src="images/caramel-sundae.png" width="306" height="507" alt="мороженое карамельный пломбир с маршмеллоу">
             </div>
@@ -121,7 +128,7 @@
       <!-- /Hero -->
       <!-- Promo -->
       <section class="promo">
-        <h2 class="promo__title title">Заказывайте мороженое и&nbsp;получайте подарки!</h2>
+        <h2 class="promo__title title">Заказывайте мороженое<br>и&nbsp;получайте подарки!</h2>
         <ul class="promo__list">
           <li class="promo__item">
             <h3 class="promo__item-title">Малинка даром!</h3>
@@ -130,15 +137,15 @@
           </li>
           <li class="promo__item">
             <h3 class="promo__item-title">Маршмеллоу даром!</h3>
-            <p class="promo__item-description">При покупке 2&nbsp;кг пломбира добавим в&nbsp;ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+            <p class="promo__item-description">При покупке 2&nbsp;кг пломбира добавим в&nbsp;ваш заказ упаковку нежных<br>зефирок совершенно бесплатно.</p>
             <button class="promo__item-btn btn btn--white" type="button">Хочу подарок!</button>
           </li>
         </ul>
       </section>
       <!-- /Promo -->
-      <!-- Popular -->
+      <!-- Flavours -->
       <section class="flavours">
-        <h2 class="flavours__title title">Попробуйте самые популярные вкусы нашего мороженого</h2>
+        <h2 class="flavours__title title">Попробуйте самые популярные<br>вкусы нашего мороженого</h2>
         <ul class="flavours__list">
           <li class="flavours__item">
             <a class="flavours__item-link" href="#">
@@ -194,8 +201,9 @@
           </li>
         </ul>
       </section>
-      <!-- /Popular -->
+      <!-- /Flavours -->
       <!-- About -->
+      <!-- Добавить круг картинкам. Сделать на флексах (грид или флексбокс) -->
       <section class="about">
         <div class="about__inner">
           <h2 class="about__title title">Магазин Глейси&nbsp;&mdash; это онлайн и&nbsp;офлайн-магазин по&nbsp;продаже мороженого собственного проиводства на&nbsp;развес</h2>
