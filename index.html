@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" sizes="32x32">
   <title>Магазин мороженого Глейси</title>
 </head>
 <body class="body-pink"> <!-- добавление класса для цвета фона всей страницы при перекючении слайдера -->
@@ -15,8 +16,25 @@
       </a>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item">
+          <li class="nav__item nav__item--catalog">
             <a class="nav__link" href="catalog.html">Каталог</a>
+            <ul class="nav__catalog nav__item-inner">
+              <li class="nav__catalog-item">
+                <a class="nav__catalog-link" href="#">Новинки</a>
+              </li>
+              <li class="nav__catalog-item">
+                <a class="nav__catalog-link" href="#">Сливочное</a>
+              </li>
+              <li class="nav__catalog-item">
+                <a class="nav__catalog-link" href="#">Щербеты</a>
+              </li>
+              <li class="nav__catalog-item">
+                <a class="nav__catalog-link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="nav__catalog-item">
+                <a class="nav__catalog-link" href="#">Мелорин</a>
+              </li>
+            </ul>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">Доставка и&nbsp;оплата</a>
@@ -28,17 +46,43 @@
         <a class="nav__phone" href="tel:+78005558628">+7 800 555-86-28</a>
         <ul class="nav__list nav__list--actions">
           <li class="nav__item nav__item--actions">
-            <a class="nav__btn nav__btn--search btn btn--transparent" href="#">
+            <a class="nav__btn nav__btn--search btn btn--transparent" href="#search">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
+            <div class="nav__item-inner nav__item-search" id="search">
+              <label aria-label="введите поисковый запрос">
+                <input class="nav__item-input" type="search" name="website-search" placeholder="Поиск по сайту">
+              </label>
+            </div>
           </li>
           <li class="nav__item nav__item--actions">
             <a class="nav__btn btn nav__btn--enter btn--transparent" href="#">Вход</a>
+            <div class="nav__item-inner nav__item-enter">
+              <form class="nav__item-form" action="#" method="post">
+                <fieldset class="nav__item-login">
+                  <legend class="login__title">Личный кабинет</legend>
+                  <label aria-label="введите адрес электронной почты">
+                    <input class="login__input" type="email" name="email" placeholder="email@example.com">
+                  </label>
+                  <label aria-label="введите пароль">
+                    <input class="login__input" type="password" name="password" placeholder="******">
+                  </label>
+                  <div class="login__inner">
+                    <button class="login__btn btn btn--pink" type="submit">Войти</button>
+                    <a class="login__link" href="#">Забыли пароль?</a>
+                    <a class="login__link" href="#">Регистрация</a>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
           </li>
           <li class="nav__item nav__item--actions">
             <a class="nav__btn btn nav__btn--cart btn--transparent" href="#">Пусто</a>
+            <div class="nav__item-inner nav__item-cart">
+              <p class="nav__item-text">Ваша&nbsp;корзина пока&nbsp;пуста</p>
+            </div>
           </li>
         </ul>
       </nav>
@@ -49,9 +93,11 @@
       <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
       <!-- Hero -->
       <section class="hero">
-        <!-- Переделать блок, сделать два дива в одном текст в списке, в другом картинки в списке, родитель у кнопок должен быть див hero__slider-wrapper. Добавить превью других слайдов (псевдоэлементом???) или с классом small картинки (??)-->
+        <input type="radio" name="tab" id="tab1" checked>
+        <input type="radio" name="tab" id="tab2">
+        <input type="radio" name="tab" id="tab3">
         <ul class="hero__slider">
-          <li class="hero__slider-item">
+          <li class="hero__slider-item slide1">
             <div class="hero__slider-inner">
               <h2 class="hero__slider-title">Нежный пломбир с&nbsp;клубничным джемом</h2>
               <p class="hero__slider-description">Натуральное мороженое из&nbsp;свежих сливок и&nbsp;молока с&nbsp;вкуснейшим клубничным джемом&nbsp;&mdash; это идеальный десерт для всей семьи.</p>
@@ -59,6 +105,12 @@
             </div>
             <div class="hero__slider-wrapper">
               <img class="hero__slider-img" src="images/delicate-sundae.png" width="306" height="506" alt="мороженое с клубничным джемом">
+              <label for="tab3" class="hero__slider-prev btn btn--transparent">
+                <span class="visually-hidden">предыдущий слайд</span>
+              </label>
+              <label for="tab2" class="hero__slider-next btn btn--transparent">
+                <span class="visually-hidden">следующий слайд</span>
+              </label>
             </div>
             <div class="hero__slider-wrapper-small">
               <img class="hero__slider-img" src="images/ice-cream-sundae.png" width="100" height="150" alt="мороженое со вкусом банана">
@@ -67,7 +119,7 @@
               <img class="hero__slider-img" src="images/caramel-sundae.png" width="100" height="150" alt="мороженое карамельный пломбир с маршмеллоу">
             </div>
           </li>
-          <li class="hero__slider-item">
+          <li class="hero__slider-item slide2">
             <div class="hero__slider-inner">
               <h2 class="hero__slider-title">Сливочное мороженое со&nbsp;вкусом банана</h2>
               <p class="hero__slider-description">Сливочное мороженое с&nbsp;ярким банановым вкусом подарит вам свежесть и&nbsp;наслаждение даже в&nbsp;самый жаркий летний день.</p>
@@ -75,9 +127,21 @@
             </div>
             <div class="hero__slider-wrapper">
               <img class="hero__slider-img" src="images/ice-cream-sundae.png" width="306" height="506" alt="мороженое со вкусом банана">
+              <label for="tab1" class="hero__slider-prev btn btn--transparent">
+                <span class="visually-hidden">предыдущий слайд</span>
+              </label>
+              <label for="tab3" class="hero__slider-next btn btn--transparent">
+                <span class="visually-hidden">следующий слайд</span>
+              </label>
+            </div>
+            <div class="hero__slider-wrapper-small">
+              <img class="hero__slider-img" src="images/caramel-sundae.png" width="100" height="150" alt="мороженое со вкусом банана">
+            </div>
+            <div class="hero__slider-wrapper-small">
+              <img class="hero__slider-img" src="images/delicate-sundae.png" width="100" height="150" alt="мороженое карамельный пломбир с маршмеллоу">
             </div>
           </li>
-          <li class="hero__slider-item">
+          <li class="hero__slider-item slide3">
             <div class="hero__slider-inner">
               <h2 class="hero__slider-title">Карамельный пломбир с&nbsp;маршмеллоу</h2>
               <p class="hero__slider-description">Необычный сладкий десерт с&nbsp;карамельным топпингом и&nbsp;кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
@@ -85,31 +149,37 @@
             </div>
             <div class="hero__slider-wrapper">
               <img class="hero__slider-img" src="images/caramel-sundae.png" width="306" height="506" alt="мороженое карамельный пломбир с маршмеллоу">
+              <label for="tab2" class="hero__slider-prev btn btn--transparent">
+                <span class="visually-hidden">предыдущий слайд</span>
+              </label>
+              <label for="tab1" class="hero__slider-next btn btn--transparent">
+                <span class="visually-hidden">следующий слайд</span>
+              </label>
+            </div>
+            <div class="hero__slider-wrapper-small">
+              <img class="hero__slider-img" src="images/delicate-sundae.png" width="100" height="150" alt="мороженое со вкусом банана">
+            </div>
+            <div class="hero__slider-wrapper-small">
+              <img class="hero__slider-img" src="images/ice-cream-sundae.png" width="100" height="150" alt="мороженое карамельный пломбир с маршмеллоу">
             </div>
           </li>
         </ul>
-        <button class="hero__slider-prev btn btn--transparent" type="button">
-          <span class="visually-hidden">предыдущий слайд</span>
-        </button>
-        <button class="hero__slider-next btn btn--transparent" type="button">
-          <span class="visually-hidden">следующий слайд</span>
-        </button>
         <footer class="hero__footer">
           <ol class="pagination">
             <li class="pagination__item">
-              <a class="pagination__link pagination__link--active" href="#">
+              <label for="tab1" class="pagination__link">
                 <span class="visually-hidden">выбран первый вкус мороженого</span>
-              </a>
+              </label>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link" href="#">
+              <label for="tab2" class="pagination__link">
                 <span class="visually-hidden">выбран второй вкус мороженого</span>
-              </a>
+              </label>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link" href="#">
+              <label for="tab3" class="pagination__link" href="#">
                 <span class="visually-hidden">выбран третий вкус мороженого</span>
-              </a>
+              </label>
             </li>
           </ol>
           <ul class="hero__footer-social footer-social">
@@ -249,12 +319,13 @@
           <p class="delivery__text">Хочется полакомиться любимым дессертом, но&nbsp;нет времени съездить в&nbsp;магазин? Закажите доставку мороженого на&nbsp;дом, и&nbsp;курьер привезёт вам ваш заказ в&nbsp;течение часа!</p>
         </div>
         <form class="delivery__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset>
+          <fieldset class="delivery__form-fieldset">
             <legend class="delivery__form-legend">Укажите адрес и&nbsp;дату доставки, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы подтвердить заказ.</legend>
             <label class="delivery__form-label delivery__form-label--date" for="delivery-date">
               Дата
               <span class="delivery__form-tooltip">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                <span class="delivery__form-tooltiptext">Введите планируемую дату доставки через точку</span>
               </span><br>
               <input class="delivery__form-input" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020"> <!-- onfocus="(this.type='date')" -->
             </label>
@@ -266,12 +337,11 @@
               Адрес
               <span class="delivery__form-tooltip">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                <span class="delivery__form-tooltiptext">Введите название улицы, дома и квартиры</span>
               </span><br>
               <input class="delivery__form-input" type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
             </label>
-            <div class="delivery__form-inner">
-              <button class="delivery__form-btn btn btn--pink" type="button">Отправить</button>
-            </div>
+            <button class="delivery__form-btn btn btn--pink" type="submit">Отправить</button>
           </fieldset>
         </form>
       </section>
@@ -287,10 +357,32 @@
             <a class="contacts__inner-address" href="tel:88128121212">+7 (812) 812-12-12</a>
             <p class="contacts__inner-subtext">(с&nbsp;10&nbsp;до&nbsp;20&nbsp;ежедневно)</p>
           </address>
-          <button class="contacts__inner-btn btn btn--pink" type="button">Форма обратной связи</button>
+          <a class="contacts__inner-btn btn btn--pink" href="#openModal" id="closeModal">Форма обратной связи</a>
         </div>
       </section>
       <!-- /Contacts -->
+      <!-- Modal -->
+      <section id="openModal" class="modal">
+        <div class="modal-window">
+          <a class="modal-window-close btn" href="#closeModal"><span class="visually-hidden">закрыть модальное окно</span></a>
+          <form action="#" method="post">
+            <fieldset class="modal-window__inner">
+              <legend class="modal-window__title">Мы обязательно ответим вам!</legend>
+              <label aria-label="введите свои фамилию и имя">
+                <input class="modal-window__input" type="text" name="name" placeholder="Имя и фамилия">
+              </label>
+              <label aria-label="введите адрес электронной почты">
+                <input class="modal-window__input" type="email" name="mail" placeholder="email@example.com">
+              </label>
+              <label aria-label="введите комментарий по необходимости">
+                <textarea class="modal-window__input" name="text" placeholder="В свободной форме"></textarea>
+              </label>
+              <button class="modal-window__btn btn btn--pink" type="submit">Отправить</button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+      <!-- /Modal -->
     </main>
     <!-- /Main -->
     <!-- Footer -->
