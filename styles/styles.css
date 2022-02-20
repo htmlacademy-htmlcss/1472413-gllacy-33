@@ -1435,12 +1435,12 @@ input[name="tab"] {
   flex-direction: column;
 }
 
-.nav__item-goods {
+.goods {
   display: flex;
   align-items: center;
 }
 
-.nav__item-goods:not(:last-child) {
+.goods:not(:last-child) {
   margin-bottom: 24px;
 }
 
