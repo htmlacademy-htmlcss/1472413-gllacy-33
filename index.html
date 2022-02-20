@@ -61,7 +61,7 @@
             <a class="nav__btn btn nav__btn--enter btn--transparent" href="#">Вход</a>
             <div class="nav__item-inner nav__item-enter">
               <form class="nav__item-form" action="#" method="post">
-                <fieldset class="nav__item-login">
+                <fieldset class="login">
                   <legend class="login__title">Личный кабинет</legend>
                   <label aria-label="введите адрес электронной почты">
                     <input class="login__input" type="email" name="email" placeholder="email@example.com">
@@ -177,7 +177,7 @@
               </label>
             </li>
             <li class="pagination__item">
-              <label for="tab3" class="pagination__link" href="#">
+              <label for="tab3" class="pagination__link">
                 <span class="visually-hidden">выбран третий вкус мороженого</span>
               </label>
             </li>
@@ -363,6 +363,7 @@
       <!-- /Contacts -->
       <!-- Modal -->
       <section id="openModal" class="modal">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
         <div class="modal-window">
           <a class="modal-window-close btn" href="#closeModal"><span class="visually-hidden">закрыть модальное окно</span></a>
           <form action="#" method="post">
