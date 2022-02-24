@@ -20,10 +20,10 @@
             <a class="nav__link" href="catalog.html">Каталог</a>
             <ul class="nav__catalog nav__item-inner">
               <li class="nav__catalog-item">
-                <a class="nav__catalog-link" href="#">Новинки</a>
+                Новинки
               </li>
               <li class="nav__catalog-item">
-                <a class="nav__catalog-link" href="#">Сливочное</a>
+                <a class="nav__catalog-link" href="catalog.html">Сливочное</a>
               </li>
               <li class="nav__catalog-item">
                 <a class="nav__catalog-link" href="#">Щербеты</a>
@@ -46,19 +46,19 @@
         <a class="nav__phone" href="tel:+78005558628">+7 800 555-86-28</a>
         <ul class="nav__list nav__list--actions">
           <li class="nav__item nav__item--actions">
-            <a class="nav__btn nav__btn--search btn btn--transparent" href="#search">
+            <button class="nav__btn nav__btn--search btn btn--transparent" type="button">
               <span class="visually-hidden">
                 Поиск
               </span>
-            </a>
-            <div class="nav__item-inner nav__item-search" id="search">
+            </button>
+            <div class="nav__item-inner nav__item-search">
               <label aria-label="введите поисковый запрос">
                 <input class="nav__item-input" type="search" name="website-search" placeholder="Поиск по сайту">
               </label>
             </div>
           </li>
           <li class="nav__item nav__item--actions">
-            <a class="nav__btn btn nav__btn--enter btn--transparent" href="#">Вход</a>
+            <button class="nav__btn btn nav__btn--enter btn--transparent" type="button">Вход</button>
             <div class="nav__item-inner nav__item-enter">
               <form class="nav__item-form" action="#" method="post">
                 <fieldset class="login">
@@ -79,7 +79,7 @@
             </div>
           </li>
           <li class="nav__item nav__item--actions">
-            <a class="nav__btn btn nav__btn--cart btn--transparent" href="#">Пусто</a>
+            <button class="nav__btn btn nav__btn--cart btn--transparent" type="button">Пусто</button>
             <div class="nav__item-inner nav__item-cart">
               <p class="nav__item-text">Ваша&nbsp;корзина пока&nbsp;пуста</p>
             </div>
@@ -93,9 +93,6 @@
       <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
       <!-- Hero -->
       <section class="hero">
-        <input type="radio" name="tab" id="tab1" checked>
-        <input type="radio" name="tab" id="tab2">
-        <input type="radio" name="tab" id="tab3">
         <ul class="hero__slider">
           <li class="hero__slider-item slide1">
             <div class="hero__slider-inner">
@@ -105,12 +102,12 @@
             </div>
             <div class="hero__slider-wrapper">
               <img class="hero__slider-img" src="images/delicate-sundae.png" width="306" height="506" alt="мороженое с клубничным джемом">
-              <label for="tab3" class="hero__slider-prev btn btn--transparent">
+              <button class="hero__slider-prev btn btn--transparent" type="button">
                 <span class="visually-hidden">предыдущий слайд</span>
-              </label>
-              <label for="tab2" class="hero__slider-next btn btn--transparent">
+              </button>
+              <button class="hero__slider-next btn btn--transparent" type="button">
                 <span class="visually-hidden">следующий слайд</span>
-              </label>
+              </button>
             </div>
             <div class="hero__slider-wrapper-small">
               <img class="hero__slider-img" src="images/ice-cream-sundae.png" width="100" height="150" alt="мороженое со вкусом банана">
@@ -127,12 +124,12 @@
             </div>
             <div class="hero__slider-wrapper">
               <img class="hero__slider-img" src="images/ice-cream-sundae.png" width="306" height="506" alt="мороженое со вкусом банана">
-              <label for="tab1" class="hero__slider-prev btn btn--transparent">
+              <button class="hero__slider-prev btn btn--transparent" type="button">
                 <span class="visually-hidden">предыдущий слайд</span>
-              </label>
-              <label for="tab3" class="hero__slider-next btn btn--transparent">
+              </button>
+              <button class="hero__slider-next btn btn--transparent" type="button">
                 <span class="visually-hidden">следующий слайд</span>
-              </label>
+              </button>
             </div>
             <div class="hero__slider-wrapper-small">
               <img class="hero__slider-img" src="images/caramel-sundae.png" width="100" height="150" alt="мороженое со вкусом банана">
@@ -149,12 +146,12 @@
             </div>
             <div class="hero__slider-wrapper">
               <img class="hero__slider-img" src="images/caramel-sundae.png" width="306" height="506" alt="мороженое карамельный пломбир с маршмеллоу">
-              <label for="tab2" class="hero__slider-prev btn btn--transparent">
+              <button class="hero__slider-prev btn btn--transparent" type="button">
                 <span class="visually-hidden">предыдущий слайд</span>
-              </label>
-              <label for="tab1" class="hero__slider-next btn btn--transparent">
+              </button>
+              <button class="hero__slider-next btn btn--transparent" type="button">
                 <span class="visually-hidden">следующий слайд</span>
-              </label>
+              </button>
             </div>
             <div class="hero__slider-wrapper-small">
               <img class="hero__slider-img" src="images/delicate-sundae.png" width="100" height="150" alt="мороженое со вкусом банана">
@@ -167,19 +164,19 @@
         <footer class="hero__footer">
           <ol class="pagination">
             <li class="pagination__item">
-              <label for="tab1" class="pagination__link">
+              <button class="pagination__link btn pagination__link--active" type="button">
                 <span class="visually-hidden">выбран первый вкус мороженого</span>
-              </label>
+              </button>
             </li>
             <li class="pagination__item">
-              <label for="tab2" class="pagination__link">
+              <button class="pagination__link btn" type="button">
                 <span class="visually-hidden">выбран второй вкус мороженого</span>
-              </label>
+              </button>
             </li>
             <li class="pagination__item">
-              <label for="tab3" class="pagination__link">
+              <button class="pagination__link btn" type="button">
                 <span class="visually-hidden">выбран третий вкус мороженого</span>
-              </label>
+              </button>
             </li>
           </ol>
           <ul class="hero__footer-social footer-social">
@@ -231,9 +228,9 @@
             <p class="flavours__item-description">Сливочное мороженое с&nbsp;малиновым джемом</p>
             <div class="flavours__item-footer">
               <b class="flavours__item-price">310 ₽/кг</b>
-              <a class="flavours__item-btn btn btn--pink" href="#">
+              <button class="flavours__item-btn btn btn--pink" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
-              </a>
+              </button>
             </div>
           </li>
           <li class="flavours__item">
@@ -244,9 +241,9 @@
             <p class="flavours__item-description">Фисташковый пломбир с&nbsp;кусочками шоколада</p>
             <div class="flavours__item-footer">
               <b class="flavours__item-price">340 ₽/кг</b>
-              <a class="flavours__item-btn btn btn--pink" href="#">
+              <button class="flavours__item-btn btn btn--pink" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
-              </a>
+              </button>
             </div>
           </li>
           <li class="flavours__item">
@@ -257,9 +254,9 @@
             <p class="flavours__item-description">Крем-брюле с&nbsp;черничным джемом</p>
             <div class="flavours__item-footer">
               <b class="flavours__item-price">330 ₽/кг</b>
-              <a class="flavours__item-btn btn btn--pink" href="#">
+              <button class="flavours__item-btn btn btn--pink" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
-              </a>
+              </button>
             </div>
           </li>
           <li class="flavours__item">
@@ -270,9 +267,9 @@
             <p class="flavours__item-description">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
             <div class="flavours__item-footer">
               <b class="flavours__item-price">320 ₽/кг</b>
-              <a class="flavours__item-btn btn btn--pink" href="#">
+              <button class="flavours__item-btn btn btn--pink" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
-              </a>
+              </button>
             </div>
           </li>
         </ul>
@@ -283,10 +280,10 @@
         <div class="about__inner">
           <h2 class="about__title title">Магазин Глейси&nbsp;&#8211; это онлайн и&nbsp;офлайн-магазин по&nbsp;продаже мороженого собственного проиводства на&nbsp;развес</h2>
           <ul class="about__list">
-            <li class="about__item">Всё наше мороженое изготавливается на&nbsp;собственном производстве с&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.</li>
-            <li class="about__item">Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств, с&nbsp;которыми нас связывает долговременное сотрудничество.</li>
-            <li class="about__item">Для приготовления мороженого используются сливки и&nbsp;молоко высочайшего качества. Все ингредиенты и&nbsp;добавки произведены из&nbsp;натурального сырья.</li>
-            <li class="about__item">Доставка нашего мороженого осуществляется в специальном термопаке, который не&nbsp;даёт мороженому растаять и&nbsp;позволяет сохранить превосходный вкус.</li>
+            <li class="about__item about__item--ice-cream">Всё наше мороженое изготавливается на&nbsp;собственном производстве с&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.</li>
+            <li class="about__item about__item--cow">Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств, с&nbsp;которыми нас связывает долговременное сотрудничество.</li>
+            <li class="about__item about__item--leaf">Для приготовления мороженого используются сливки и&nbsp;молоко высочайшего качества. Все ингредиенты и&nbsp;добавки произведены из&nbsp;натурального сырья.</li>
+            <li class="about__item about__item--thermometer">Доставка нашего мороженого осуществляется в специальном термопаке, который не&nbsp;даёт мороженому растаять и&nbsp;позволяет сохранить превосходный вкус.</li>
           </ul>
         </div>
       </section>
@@ -421,7 +418,7 @@
       </ul>
       <div class="footer__developed">
         <a class="footer__developed-link" target="_blank" href="https://htmlacademy.ru/">
-          <svg width="93" height="27" viewBox="0 0 93 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg aria-hidden="true" focusable="false" width="93" height="27" viewBox="0 0 93 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_521_0)">
             <path d="M0 10.4163V12.4995H1.98768V10.4163H0Z" fill="#2D3440"/>
             <path d="M9.41854 3.66311C8.15678 3.66311 7.13702 4.236 6.4975 5.06932H6.42836V0H4.78638V12.4997H6.42836V8.21161C6.42836 6.4929 7.49999 5.26029 9.07286 5.26029C10.5593 5.26029 11.4235 6.37138 11.4235 7.86439V12.4997H13.0655V7.56926C13.0655 5.19084 11.5963 3.66311 9.41854 3.66311Z" fill="#2D3440"/>
