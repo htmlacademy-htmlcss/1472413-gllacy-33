@@ -320,10 +320,10 @@
             <legend class="delivery__form-legend">Укажите адрес и&nbsp;дату доставки, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы подтвердить заказ.</legend>
             <label class="delivery__form-label delivery__form-label--date" for="delivery-date">
               Дата
-              <span class="delivery__form-tooltip">
+              <button class="delivery__form-tooltip btn">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 <span class="delivery__form-tooltiptext">Введите планируемую дату доставки через точку</span>
-              </span><br>
+              </button><br>
               <input class="delivery__form-input" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020"> <!-- onfocus="(this.type='date')" -->
             </label>
             <label class="delivery__form-label delivery__form-label--phone" for="delivery-phone">
@@ -332,10 +332,10 @@
             </label>
             <label class="delivery__form-label delivery__form-label--address" for="delivery-address">
               Адрес
-              <span class="delivery__form-tooltip">
+              <button class="delivery__form-tooltip btn">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 <span class="delivery__form-tooltiptext">Введите название улицы, дома и квартиры</span>
-              </span><br>
+              </button><br>
               <input class="delivery__form-input" type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
             </label>
             <button class="delivery__form-btn btn btn--pink" type="submit">Отправить</button>
@@ -363,7 +363,7 @@
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <div class="modal-window">
           <a class="modal-window-close btn" href="#closeModal"><span class="visually-hidden">закрыть модальное окно</span></a>
-          <form action="#" method="post">
+          <form action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="modal-window__inner">
               <legend class="modal-window__title">Мы обязательно ответим вам!</legend>
               <label aria-label="введите свои фамилию и имя">

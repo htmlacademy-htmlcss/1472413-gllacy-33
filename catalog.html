@@ -59,7 +59,7 @@
         <li class="nav__item nav__item--actions">
           <a class="nav__btn btn nav__btn--enter btn--transparent" href="#">Вход</a>
           <div class="nav__item-inner nav__item-enter">
-            <form class="nav__item-form" action="#" method="post">
+            <form class="nav__item-form" action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="login">
                 <legend class="login__title">Личный кабинет</legend>
                 <label aria-label="введите адрес электронной почты">
@@ -147,8 +147,29 @@
           </select>
         </div>
         <fieldset class="flavours__filter">
-          <legend class="flavours__filter-text">Цена: 100 ₽ &ndash; 500 ₽</legend>
-          <label class="flavours__filter-list"><input class="flavours__filter-range" type="range"></label>
+          <div class="range-wrapper-inputs">
+            <legend class="flavours__filter-text">Цена:</legend>
+            <label class="flavours__filter-label flavours__filter-label--range">
+              <input class="range-input" type="number" value="100" name="min-price">₽ &#8211
+            </label>
+            <label class="flavours__filter-label flavours__filter-label--range">
+              <input class="range-input" type="number" value="500" name="max-price">₽
+            </label>
+          </div>
+          <div class="range-wrapper-toddler">
+            <div class="range">
+              <div class="range-scale">
+                <div class="range-bar">
+                  <button class="range-toggle toggle-min btn">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button class="range-toggle toggle-max btn">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </fieldset>
         <fieldset class="flavours__filter">
           <legend class="flavours__filter-text">Жирность:</legend>
