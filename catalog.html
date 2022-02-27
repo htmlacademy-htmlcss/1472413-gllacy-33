@@ -50,6 +50,7 @@
               Поиск
             </span>
           </a>
+          <!-- Для того, чтобы показать попап, необходимо добавить div'у класс "active" -->
           <div class="nav__item-inner nav__item-search">
             <label aria-label="введите поисковый запрос">
               <input class="nav__item-input" type="search" name="website-search" placeholder="Поиск по сайту">
@@ -58,6 +59,7 @@
         </li>
         <li class="nav__item nav__item--actions">
           <a class="nav__btn btn nav__btn--enter btn--transparent" href="#">Вход</a>
+          <!-- Для того, чтобы показать попап, необходимо добавить div'у класс "active" -->
           <div class="nav__item-inner nav__item-enter">
             <form class="nav__item-form" action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="login">
@@ -79,6 +81,7 @@
         </li>
         <li class="nav__item nav__item--actions not-empty">
           <a class="nav__btn btn nav__btn--cart btn--transparent" href="#">2 товара</a>
+          <!-- Для того, чтобы показать попап, необходимо добавить div'у класс "active" -->
           <div class="nav__item-inner nav__item-cart">
             <p class="nav__item-text">Корзина</p>
             <ul class="nav__item-list">
@@ -147,10 +150,11 @@
           </select>
         </div>
         <fieldset class="flavours__filter">
+          <legend class="visually-hidden">Ценовой диапазон</legend>
           <div class="range-wrapper-inputs">
-            <legend class="flavours__filter-text">Цена:</legend>
+            <span class="flavours__filter-text">Цена:</span>
             <label class="flavours__filter-label flavours__filter-label--range">
-              <input class="range-input" type="number" value="100" name="min-price">₽ &#8211
+              <input class="range-input" type="number" value="100" name="min-price">₽ &#8211;
             </label>
             <label class="flavours__filter-label flavours__filter-label--range">
               <input class="range-input" type="number" value="500" name="max-price">₽
