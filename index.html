@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   <title>Магазин мороженого Глейси</title>
 </head>
-<body class="body-pink"> <!-- добавление класса для цвета фона всей страницы при перекючении слайдера -->
+<body> <!-- добавать класс к body для цвета фона всей страницы при перекючении слайдера -->
     <!-- Header -->
     <header class="header container">
       <a class="header__logo-link">
@@ -52,7 +52,7 @@
                 Поиск
               </span>
             </button>
-            <!-- Для того, чтобы показать попап, необходимо добавить класс "active" -->
+            <!-- Для того, чтобы показать попап, необходимо добавить класс "active" к "nav__item-inner" -->
             <div class="nav__item-inner nav__item-search">
               <label aria-label="введите поисковый запрос">
                 <input class="nav__item-input" type="search" name="website-search" placeholder="Поиск по сайту" required>
@@ -61,7 +61,7 @@
           </li>
           <li class="nav__item nav__item--actions">
             <button class="nav__btn btn nav__btn--enter btn--transparent" type="button">Вход</button>
-            <!-- Для того, чтобы показать попап, необходимо добавить класс "active" -->
+            <!-- Для того, чтобы показать попап, необходимо добавить класс "active" к "nav__item-inner" -->
             <div class="nav__item-inner nav__item-enter">
               <form class="nav__item-form" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="login">
@@ -81,7 +81,7 @@
           </li>
           <li class="nav__item nav__item--actions">
             <button class="nav__btn btn nav__btn--cart btn--transparent" type="button">Пусто</button>
-            <!-- Для того, чтобы показать попап, необходимо добавить класс "active" -->
+            <!-- Для того, чтобы показать попап, необходимо добавить класс "active" к "nav__item-inner" -->
             <div class="nav__item-inner nav__item-cart">
               <p class="nav__item-text paragraph">Ваша&nbsp;корзина пока&nbsp;пуста</p>
             </div>
