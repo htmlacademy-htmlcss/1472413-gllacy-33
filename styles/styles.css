@@ -208,10 +208,15 @@ img {
   line-height: 46px;
 }
 
+.subtitle {
+  word-break: break-all;
+}
+
 .subtitle,
 .paragraph {
   margin: 0;
-  padding: 0;
+  padding: 0
+
 }
 
 /* Header */
@@ -927,14 +932,16 @@ img {
   margin-bottom: 80px;
   padding: 64px 64px 64px 100px;
 
-  background-color: #FCFCFC;
-  background: url("../images/delivery.jpg") no-repeat center;
-  background-size: cover;
+  background-color: #F5F5F5;
+  background-image: url("../images/delivery.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
   border-radius: 16px;
 }
 
 .delivery__inner {
-  padding-top: 5px;
+  padding-top: 4px;
 }
 
 .delivery__title {
@@ -1069,9 +1076,11 @@ img {
 .contacts {
   padding: 64px;
 
-  background-color: #E7E7E7;
-  background: url("../images/feedback.jpg") no-repeat center;
-  background-size: cover;
+  background-color: #E5C3C7;
+  background-image: url("../images/feedback.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
   border-radius: 16px;
 }
 
@@ -1117,6 +1126,12 @@ img {
   padding: 13px 33px;
 
   text-decoration: none;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 250px;
+  display: inline-block;
 }
 
 /* Footer */
@@ -1135,14 +1150,17 @@ img {
 
 .footer__addition {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 4px 21px;
+  grid-template-columns: repeat(2, minmax(auto, 205px));
+  gap: 4px 0;
   grid-auto-rows: max-content;
-  margin: 0;
-  margin-right: 200px;
+  margin: 0 200px 0 0;
   padding: 0;
 
   list-style-type: none;
+}
+
+.footer__addition-item {
+  padding-left: 21px;
 }
 
 .footer__addition-link {
@@ -1267,7 +1285,7 @@ img {
 
 .flavours__filter-text {
   display: inline-block;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   padding-left: 16px;
 }
 
@@ -1279,7 +1297,7 @@ img {
 }
 
 .flavours__filter-select {
-  padding: 9px 48px 8px 15px;
+  padding: 8px 48px 11px 15px;
 
   font-family: inherit;
   font-size: inherit;
@@ -1367,7 +1385,7 @@ img {
 }
 
 .range-wrapper-toddler {
-  padding: 16px 16px;
+  padding: 17px 16px;
 }
 
 .catalog-filter-label {
@@ -1377,7 +1395,7 @@ img {
 
 .range-input {
   width: 30px;
-  padding: 0 2px;
+  padding: 0 5px;
 
   font: inherit;
   text-align: center;
@@ -1548,7 +1566,7 @@ img {
 .flavours__btn {
   align-self: flex-end;
   margin-bottom: 16px;
-  padding: 8px 53.5px;
+  padding: 8px 54px;
 
   font-size: 14px;
   font-weight: 700;
