@@ -709,7 +709,7 @@ img {
 .flavours__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 91px 30px;
+  gap: 90px 30px;
   margin: 0;
   padding: 0;
 
@@ -1157,7 +1157,6 @@ img {
 }
 
 .footer__addition-item {
-  margin-top: -1px;
   padding-left: 21px;
 }
 
@@ -1226,7 +1225,7 @@ img {
 
 /* Header-inner */
 .main-inner__header {
-  margin-bottom: 51px;
+  margin-bottom: 52px;
   padding-top: 30px;
 }
 
@@ -1265,7 +1264,7 @@ img {
 
 /* Flavours__form */
 .flavours-inner {
-  margin-bottom: 56px;
+  margin-bottom: 57px;
 }
 
 .flavours__form {
@@ -1299,7 +1298,7 @@ img {
 }
 
 .flavours__filter-select {
-  padding: 8px 48px 11px 15px;
+  padding: 10px 48px 9px 15px;
 
   font-family: inherit;
   font-size: inherit;
@@ -1397,7 +1396,7 @@ img {
 
 .range-input {
   width: 30px;
-  padding: 0 5px;
+  padding: 0;
 
   font: inherit;
   text-align: center;
